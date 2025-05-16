@@ -1,0 +1,491 @@
+                
+        body {
+        font-family: Arial, sans-serif;
+        background: #c1f3f6;
+        }
+
+        .title{
+        font-family: 'Brush Script MT', cursive;
+        font-weight: 200%;
+    
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-container h1 {
+            color: white;
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #0871a1;
+            padding: 10px 20px;
+            flex-wrap: wrap; /* Permette di andare a capo se serve */
+        }
+
+        .navbar img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .navbar h1 {
+        color: white;
+        margin: 0;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 12px;
+            transition: 0.3s;
+            white-space: nowrap; 
+        }
+        
+
+        .nav-links a:hover {
+            background-color: lightskyblue;
+        }
+
+        .login {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .login img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+        .login button {
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login button:hover {
+            background-color: #005f7f;
+        }
+        
+        .wrapper {
+            width: 420px;
+            background: #008CBA;
+            color: #fff;
+            border-radius: 10px;
+            padding: 30px 40px;
+        }
+
+        .wrapper h1 {
+            font-size: 36px;
+            text-align: center;
+        }
+
+        .wrapper .input-box {
+            position: relative;
+            width: 100%;
+            height: 50px;
+            margin: 30px 0;
+            border-radius: 20px;
+            background-color: #008CBA;
+            border-color: white;
+        }
+
+        .input-box input {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+            border: 2px solid white ;
+            border-radius: 40px;
+            font-size: 16px;
+            color: #f6eeee;
+            padding: 20px 45px 20px 20px;
+        }
+
+        .input-box input::placeholder {
+            color: #fff;
+        }
+
+        .input-box i{
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+        }
+
+       .wrapper .remember-forgot {
+        display: flex;
+        justify-self: space-between;
+        font-size: 14.5px;
+        margin: -15px 0 15px;
+       }
+
+       .remember-forgot label input{
+        accent-color:#fff;
+        margin-right: 3px;
+       }
+        
+       .remember-forgot a{
+        color: #fff;
+        text-decoration: none;
+       }
+
+       .remember-forgot a:hover{
+        text-decoration: underline;
+       }
+
+       .wrapper .btn{
+        width: 100%;
+        height: 45px;
+        background: #fff;
+        border: none;
+        outline: none;
+        border-radius: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+        cursor: pointer;
+        font-size: 16px;
+        color: #333;
+        font-weight: 600;
+       }
+
+       .wrapper .register-link {
+        font-size: 14.5px;
+        text-align: center;
+        margin: 20px 0 15px;
+       }
+
+       .register-link p a{
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+       }
+
+       .register-link p a:hover{
+        text-decoration: underline;
+       }
+
+       .Dog {
+        border-radius: 20%;
+        width: 80%;
+       }
+
+       .home {
+        width: 19.6%;
+        background: #008CBA;
+        color: #fff;
+        border-radius: 5%;
+        padding: 3% 5%;
+        display: inline-block;
+        justify-content: space-between;
+        margin: 2% 1.75%;
+       }
+
+       .scritta {
+        font-weight: 90%;
+       }
+
+    
+
+       .galleria {
+        width: 275px;
+        color: #fff;
+        border-radius: 20%;
+        padding: 20px 35px;
+        display: inline-block;
+        align-items: center;
+        margin: -12px 12px;
+       }
+
+       .footer {
+        display: block;
+        width: 400px;
+        background: #06516a;
+        color: #fff;
+        border-radius: 20px;
+        padding: 20px 35px;
+        margin: -12px 12px;
+        position: fixed;
+       }
+       
+       @media screen and (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .logo-container {
+            justify-content: center;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    
+        .nav-links {
+            width: 100%;
+            justify-content: center;
+        }
+    
+        .nav-links a {
+            width: auto;
+            text-align: center;
+            padding: 10px;
+        }
+    }
+
+    .wrapper .forgot {
+        display:contents;
+        justify-self: space-between;
+        font-size: 14.5px;
+        margin: -15px 0 15px;
+       }
+
+       .forgot label input{
+        accent-color:#fff;
+        margin-right: 3px;
+       }
+        
+       .forgot a{
+        color: #fff;
+        text-decoration: none;
+       }
+
+       .forgot a:hover{
+        text-decoration: underline;
+       }
+
+    .via-civico {
+        display: flex;
+        gap: 10px;
+        position: relative;
+        width: 100%;
+        height: 50px;
+        margin: 30px 0;
+    }
+    
+    .via-civico input {
+        width: 50%;
+        height: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 40px;
+        font-size: 16px;
+        color: #f6eeee;
+        padding: 20px 45px 20px 20px;
+    }
+    
+    .via-civico input::placeholder {
+        color: #fff;
+    }
+    
+    .via-civico i {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+        color: #fff;
+    }
+    html, body {
+        height: 100%;
+        margin: 0%;
+        padding: 0;
+    }
+    #container {
+        min-height: 70%;
+        height: auto !important;
+        height: 50%;
+        width: 100%;
+        margin: 0 auto  -100px;
+        background-color: #005f7f;
+        position: absolute;
+    }
+    #footer, #push {
+        height: 30%;
+        clear: both;;
+    }
+    #footer {
+        position:static;
+        bottom: 0;
+        left: 0;
+        width: auto;
+        
+    }
+
+    .banner {
+        width: 90%;
+        height: auto;
+    }
+
+    .foottitle{
+        font-family: 'Brush Script MT', cursive;
+        font-size: 300%;
+        padding: 2%;
+    }
+
+    .footcolor{
+        color: lightgrey;
+    }
+
+    .footposition{
+        justify-content: space-between;
+        padding: 1%; 
+        margin: 2% 4.5%;
+        position:relative;
+        display: inline-table;
+    }
+
+    .footlink{
+        color: lightgrey;
+        text-decoration:solid;
+        padding: 3px 5px;
+        transition: background 0.3s;
+        font-size: 14px;
+    }
+    
+    .h8{
+        font-size: 70%;
+    }
+   
+    .imgsiamo {
+        border-radius: 6%;
+        
+    }
+    
+    .siamoposition{
+        
+        font-family:sans-serif;
+        padding: 1% 10%;
+        
+    }
+    .error {
+        color: #FF0000;
+    }
+    .fotoprofilo{
+        
+        border-radius: 90%;
+    }
+
+    .table {
+         width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        background-color: #ffffff;
+         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+        .table th {
+            background-color: #0871a1;
+            color: #fff;
+            padding: 12px 15px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .table td {
+            padding: 12px 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .table tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        .table tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .table input[type="submit"], .table button {
+            padding: 8px 12px;
+            font-size: 14px;
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .table input[type="submit"]:hover, .table button:hover {
+            background-color: #005f7f;
+        }
+
+        .table form {
+            display: inline-block;
+            margin: 0 5px;
+        }
+
+        .table form button {
+            padding: 6px 12px;
+            background-color: #e74c3c;
+            border-radius: 5px;
+            color: white;
+            font-size: 14px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .table form button:hover {
+            background-color: #c0392b;
+        }
+
+        #link_adozione > a:link, a:visited, a:hover, a:active {
+            color: white;
+        }
+
+        .cani_galleria {
+            position: relative;
+            left: 30px;
+            right: 30px;
+            top: 30px;
+            bottom: 30px;
+            float: left;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            border-radius: 20px;
+            background-color: #008CBA;
+            margin: 30px;
+        }
+
+        #immagine_cane {
+            width: 200px;
+            height: 120px;
+            border-radius: 20px;
+        }
+
+        #cane_visualizza {
+            background-color: #008CBA;
+            padding: 25px;
+            width: 350px;
+            height: 380px;
+            color: white;
+            border-radius: 20px;
+        }
