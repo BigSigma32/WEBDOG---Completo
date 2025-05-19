@@ -39,6 +39,7 @@ if (!isset($_SESSION['user_id']) && !isset($_COOKIE['user_id'])) {
                 <a href="Gestione.php">Gestione Utenti</a>
                 <a href="GestioneAddetti.php">Gestione Addetti</a>
                 <a href="DB\GestioneCani.php">Gestione Cani</a>
+                <a href="GestioneAdozioni.php">Gestione Adozioni</a>
             <?php } ?>
         </div>
     
