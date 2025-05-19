@@ -106,7 +106,12 @@ if (!isset($_SESSION['user_id']) && !isset($_COOKIE['user_id'])) {
             <a href="Chisiamo.php">Chi siamo?</a>
             <a href="Eventi.php">Eventi</a>
             <a href="Donazioni.php">Donazioni</a>
-            <a href="Gestione.php">Gestione Utenti</a>
+            <?php if ($ruolo == 'Admin') { ?>
+                <a href="Gestione.php">Gestione Utenti</a>
+                <a href="GestioneAddetti.php">Gestione Addetti</a>
+                <a href="DB\GestioneCani.php">Gestione Cani</a>
+                <a href="GestioneAdozioni.php">Gestione Adozioni</a>
+            <?php } ?>
         </div>
 
         <div class="login">
