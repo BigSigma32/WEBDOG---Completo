@@ -36,16 +36,26 @@ if (!isset($_SESSION['user_id']) && !isset($_COOKIE['user_id'])) {
             <a href="Donazioni.php">Donazioni</a>
             <?php if ($ruolo == 'Admin') { ?>
                 <a href="Gestione.php">Gestione Utenti</a>
+                <a href="GestioneAddetti.php">Gestione Addetti</a>
+                <a href="DB\GestioneCani.php">Gestione Cani</a>
+                <a href="GestioneAdozioni.php">Gestione Adozioni</a>
             <?php } ?>
         </div>
     
         <div class="login">
-            <a href="Login1.php"><img src="img/Login/user.jpg" alt="Foto profilo"></a>
+        <?php if ($ruolo == 'Admin' || $ruolo == 'User') {
+            echo "<a href='Area Personale.php'><img src='img/Login/user.jpg' alt='Foto profilo'></a>";
+            } 
+        
+            elseif($ruolo != 'User' && $ruolo != 'Admin') {
+            echo "<a href='Login1.php'><img src='img/Login/user.jpg' alt='Foto profilo'></a>";
+             }?>
         </div>
     </div>   
     <br>
     <br>
     <br>
+    <center><h1>Eventi</h1></center>
     <?php
         $sql = "SELECT * FROM Eventi";
 
@@ -58,11 +68,17 @@ if (!isset($_SESSION['user_id']) && !isset($_COOKIE['user_id'])) {
         $row = mysqli_fetch_assoc($eventi);
 
         foreach($eventi as $i => $row) {
-            echo $row["Nome"]; echo "<br>";
-            echo $row["Descrizione"]; echo "<br>";
-            echo $row["Luogo"]; echo "<br>";
-            echo $row["Indirizzo"]; echo "<br>";
+            echo "<div id='eventi_div'>";
+            echo "<h2>"; echo $row["Nome"]; echo "</h2><br>";
+            echo "Descrizione:<br>"; echo $row["Descrizione"]; echo "<br>";
+            echo "Luogo dell'evento: "; echo $row["Luogo"]; echo "<br>";
+            if(!$row["Indirizzo"]) {
+                echo "Indirizzo non dato o inesistente.";
+            } else {
+                echo "Indirizzo: "; echo $row["Indirizzo"]; echo "<br>";
+            }
             echo "<br>";
+            echo "</div>";
         }
     ?>
 
@@ -78,12 +94,12 @@ if (!isset($_SESSION['user_id']) && !isset($_COOKIE['user_id'])) {
             </div>
             <div class="footposition">
         <h4>Link Utili</h4>
-            <ul>
-                <li><a href="Galleria.html" class="footlink">Adotta un Amico</a></li>
-                <li><a href="Chisiamo.html" class="footlink">Chi Siamo</a></li>
-                <li><a href="#" class="footlink">Donazioni</a></li>
-                <li><a href="Contatti.html" class="footlink">Contatti</a></li>
-            </ul>
+             <ul>
+                    <li><a href="Galleria.html" class="footlink">Adotta un Amico</a></li>
+                    <li><a href="Chisiamo.html" class="footlink">Chi Siamo</a></li>
+                    <li><a href="Donazioni.php" class="footlink">Donazioni</a></li>
+                    <li><a href="Contatti.html" class="footlink">Contatti</a></li>
+                </ul>
         </div>
         <div class="footposition">
         <h4>Social</h4>
