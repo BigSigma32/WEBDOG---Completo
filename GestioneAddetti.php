@@ -113,6 +113,7 @@ if ($ruolo != "Admin") {header('Location: Home.php');}
                 <a href="Gestione.php">Gestione Utenti</a>
                 <a href="GestioneAddetti.php">Gestione Addetti</a>
                 <a href="DB\GestioneCani.php">Gestione Cani</a>
+                <a href="GestioneAdozioni.php">Gestione Adozioni</a>
             <?php } ?>
         </div>
 
